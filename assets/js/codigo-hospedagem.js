@@ -1,0 +1,5 @@
+codigo_hospedagem = {
+    function () {
+
+    }
+}
