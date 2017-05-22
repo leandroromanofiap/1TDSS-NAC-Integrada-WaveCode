@@ -40,3 +40,13 @@ body {
 
 /* consulta reserva  */
 
+#consulta-reserva {
+
+}
+
+#consulta-reserva #img {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/img_codigo-reserva.png);
+  background-position: center right;
+}
