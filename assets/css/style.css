@@ -16,7 +16,6 @@ body {
 
 .container .wrapper {
     width: 90%;
-    height: 75px;
     margin: 0 auto;
 }
 
@@ -34,7 +33,7 @@ body {
 }
 
 #menu {
-    
+
 }
 
 
@@ -48,5 +47,17 @@ body {
   width: 100%;
   height: auto;
   background-image: url(../img/img_codigo-reserva.png);
-  background-position: center right;
+  background-position: center -174px;
+  background-repeat: no-repeat;
+  color: white;
+  ;
+}
+
+#p-left{
+  background-color: rgba(163, 0, 0, 0.8);
+  width: 50%;
+
+}
+.p-left-padding{
+  padding:8%;
 }
