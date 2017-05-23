@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 /* Geral */
 body {
@@ -24,7 +24,7 @@ body {
 #cabecalho {
     width: 100%;
     height: 100%;
-    background: linear-gradient(141deg, #00BCD4, rgba(0, 158, 139, 1));
+    background: #3C5297;
     color: #fff;
 }
 
@@ -66,7 +66,8 @@ body {
     width: 100%;
     height: 250px;
     color: #fff;
-    background: linear-gradient(141deg, #00BCD4, rgba(0, 158, 139, 1));
+    background: #182C6B;
+    clear: both;
 }
 
 #rodape #logo {
@@ -107,14 +108,48 @@ body {
   background-position: center -174px;
   background-repeat: no-repeat;
   color: white;
-  ;
+  float: left;
 }
+
+#consulta-reserva #titulo{
+  text-align: center;
+}
+
 
 #p-left{
   background-color: rgba(163, 0, 0, 0.8);
   width: 50%;
 
+
 }
 .p-left-padding{
   padding:8%;
+}
+
+#codigoReservatext{
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px;
+
+}
+#botaoEnviar{
+margin: 250px auto;
+border-radius: 15px;
+padding: 15px;
+color: white;
+background-color: #8B51F4;
+border: 0;
+width: 90%;
+text-align: center;
+
+}
+#formu1{
+  margin-left: 40%;
+  margin-bottom: 100px;
+  margin: 250px auto;
+  margin-left: 35%;
 }

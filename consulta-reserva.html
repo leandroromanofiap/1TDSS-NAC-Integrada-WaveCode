@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Consulta reserva</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-</head>
-<body>
-  <div id="consulta-reserva" class="container">
-    <div id="img">
-      <div id="p-left">
-        <div class="p-left-padding">
-      <h3>CONSULTA RESERVA</h3>
-
-      <form action="/pagina-processa-dados-do-form" method="post">
-          <div>
-              <label for="codigoReserva">Informe o código da reserva:</label>
-              <br>
-              <input type="text" id="codigoReserva"/>
-              <br>
-              <div>
-               <input type="submit" value="ENVIAR"/>
-             </div>
-
-          </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Consultar reserva</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   </head>
+   <body>
+      <div id="consulta-reserva" class="container">
+         <div id="img">
+            <div id="p-left">
+               <div class="p-left-padding">
+                  <h3 id="titulo">CONSULTAR RESERVA</h3>
+                  <form action="/pagina-processa-dados-do-form" method="post">
+                  <div>
+                     <label for="codigoReserva" id="formu1">Código da reserva</label>
+                     <br>
+                     <input type="text" id="codigoReservatext" placeholder="Digite o código da reserva"/>
+                     <br>
+                     <div>
+                        <input type="submit" value="Consultar Reserva" id="botaoEnviar"/>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-
-  </div>
-  </div>
-
-
-</body>
+         </div>
+      </div>
+   </body>
 </html>
