@@ -67,6 +67,7 @@ body {
     height: 250px;
     color: #fff;
     background: linear-gradient(141deg, #00BCD4, rgba(0, 158, 139, 1));
+    clear: both;
 }
 
 #rodape #logo {
@@ -107,7 +108,7 @@ body {
   background-position: center -174px;
   background-repeat: no-repeat;
   color: white;
-  ;
+  float: left;
 }
 
 #p-left{
@@ -117,4 +118,18 @@ body {
 }
 .p-left-padding{
   padding:8%;
+}
+
+
+/* Codigo Daniel */
+
+.bt-submit {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #8B51F4;
+  border: 0;
+  padding: 15px;
+  border-radius: 22px;
+  color: #fff;
+  text-transform: capitalize;
 }
