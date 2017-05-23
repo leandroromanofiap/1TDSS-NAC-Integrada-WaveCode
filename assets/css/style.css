@@ -50,14 +50,32 @@ body {
   background-position: center -174px;
   background-repeat: no-repeat;
   color: white;
-  ;
+
 }
 
 #p-left{
   background-color: rgba(163, 0, 0, 0.8);
   width: 50%;
 
+
 }
 .p-left-padding{
   padding:8%;
+}
+
+#codigoReservatext{
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid white;
+  padding-bottom: 1%;
+  vertical-align: middle;
+  margin-top: 150px;
+  margin-left: 25%;
+
+}
+#botaoEnviar{
+margin: 250px auto;
+margin-left: 35%;
+
+
 }
