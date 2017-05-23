@@ -1,32 +1,92 @@
-<!DOCTYPE html>
-<html lang="pt">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Consultar reserva</title>
-      <link rel="stylesheet" href="assets/css/style.css">
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   </head>
-   <body>
-      <div id="consulta-reserva" class="container">
-         <div id="img">
+<html>
+    <head>
+        <title>Hotel Boa Viagem - Consulta de Reserva</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <div class="container">
+            <header id="cabecalho">
+                <div class="wrapper">
+                    <div id="logo">
+                        <p>Hotel Boa Viagem</p>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li>Home</li>
+                            <li>Sobre</li>
+                            <li>Reservas</li>
+                            <li>Contato</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <!-- Include files here... -->
+        <div id="consulta-reserva" class="container">
+            <div id="img">
             <div id="p-left">
-               <div class="p-left-padding">
-                  <h3 id="titulo">CONSULTAR RESERVA</h3>
-                  <form action="/pagina-processa-dados-do-form" method="post">
-                  <div>
-                     <label for="codigoReserva" id="formu1">Código da reserva</label>
-                     <br>
-                     <input type="text" id="codigoReservatext" placeholder="Digite o código da reserva"/>
-                     <br>
-                     <div>
-                        <input type="submit" value="Consultar Reserva" id="botaoEnviar"/>
-                     </div>
-                  </div>
-               </div>
+                <div class="p-left-padding">
+                    <h3 id="titulo">CONSULTA DE RESERVA</h3>
+                    <form action="" id="formu1">
+                    <label for="codigoReserva">Código da Reserva</label>
+                    <br>
+                    <div id="form-wrapper">
+                        <input type="text" id="codigo-reserva-text" placeholder="Digite o código da reserva"/>
+                    </div>
+                    <br>
+                    <input type="submit" value="Consultar Reserva" class="botao-enviar"/>
+                    </form>
+                </div>
             </div>
-         </div>
-      </div>
-   </body>
+            </div>
+        </div>
+        
+        <!-- Rodapé -->
+        <div class="container">
+            <footer id="rodape">
+                <div class="wrapper">
+                    <div id="logo">
+                        <p>Hotel<br>Boa Viagem</p>
+                    </div>
+                    <div id="links-uteis">
+                        <ul>
+                            <p>Navegação do site:</p>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                        </ul>
+
+                        <ul>
+                            <p>Links úteis:</p>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                        </ul>
+
+                        <ul>
+                            <p>Contato:</p>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                            <li>Link para página</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </body>
 </html>

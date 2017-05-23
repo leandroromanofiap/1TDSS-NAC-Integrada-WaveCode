@@ -75,7 +75,6 @@ body {
     width: 25%;
     height: 100%;
     font-size: 40px;
-    padding-top: 30px;
     background: rgba(255, 255, 255, 0.40);
 }
 
@@ -95,38 +94,40 @@ body {
     margin-left: 0px;
 }
 
-/* consulta reserva  */
-
-#consulta-reserva {
-
-}
+/* Consultar Reserva  */
+#consulta-reserva {}
 
 #consulta-reserva #img {
-  width: 100%;
-  height: auto;
-  background-image: url(../img/img_codigo-reserva.png);
-  background-position: center -174px;
-  background-repeat: no-repeat;
-  color: white;
-  float: left;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/img_codigo-reserva.png);
+    background-position: center -174px;
+    background-repeat: no-repeat;
+    color: white;
+    float: left;
 }
 
-#consulta-reserva #titulo{
-  text-align: center;
+#consulta-reserva #titulo {
+    text-align: center;
+    margin-bottom: 175px;
 }
 
-
-#p-left{
-  background-color: rgba(163, 0, 0, 0.8);
-  width: 50%;
-
-
-}
-.p-left-padding{
-  padding:8%;
+#consulta-reserva #form-wrapper {
+    width: 100%; 
+    margin-top: 25px; 
+    margin-bottom: 75px;
 }
 
-#codigoReservatext{
+#p-left {
+    background-color: rgba(163, 0, 0, 0.8);
+    width: 50%;
+}
+
+.p-left-padding {
+    padding: 8%;
+}
+
+#codigo-reserva-text {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 15px;
   border: 1px solid white;
@@ -134,22 +135,35 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 8px;
-
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
 }
-#botaoEnviar{
-margin: 250px auto;
-border-radius: 15px;
-padding: 15px;
-color: white;
-background-color: #8B51F4;
-border: 0;
-width: 90%;
-text-align: center;
 
+#codigo-reserva-text::-webkit-input-placeholder {
+    color: #fff;
+    text-transform: none;
 }
-#formu1{
-  margin-left: 40%;
-  margin-bottom: 100px;
-  margin: 250px auto;
-  margin-left: 35%;
+
+.botao-enviar {
+    width: 92.5%;
+    margin: 0 auto;
+    background-color: #8B51F4;
+    border: 0;
+    padding: 15px;
+    border-radius: 22px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.botao-enviar:hover {
+    cursor: pointer;
+    background-color: #6f3ec9;
+}
+
+#formu1 {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
 }
