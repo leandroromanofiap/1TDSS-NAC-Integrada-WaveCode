@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Hotel Boa Viagem - Consulta de Reserva</title>
@@ -12,14 +13,24 @@
             <header id="cabecalho">
                 <div class="wrapper">
                     <div id="logo">
-                        <p>Hotel Boa Viagem</p>
+                        <a href="index.html" target="_self">
+                            <img src="assets/img/logo_hbv_horizontal_WHITE.png" alt="">
+                        </a>
                     </div>
                     <nav id="menu">
                         <ul>
-                            <li>Home</li>
-                            <li>Sobre</li>
-                            <li>Reservas</li>
-                            <li>Contato</li>
+                            <li>
+                                <a href="" target="">Home</a>
+                            </li>
+                            <li>
+                                <a href="" target="">Sobre</a>
+                            </li>
+                            <li>
+                                <a class="active" href="" target="">Reservas</a>
+                            </li>
+                            <li>
+                                <a href="" target="">Contato</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -29,20 +40,20 @@
         <!-- Include files here... -->
         <div id="consulta-reserva" class="container">
             <div id="img">
-            <div id="p-left">
-                <div class="p-left-padding">
-                    <h3 id="titulo">CONSULTA DE RESERVA</h3>
-                    <form action="" id="formu1">
-                    <label for="codigoReserva">Código da Reserva</label>
-                    <br>
-                    <div id="form-wrapper">
-                        <input type="text" id="codigo-reserva-text" placeholder="Digite o código da reserva"/>
+                <div id="p-left">
+                    <div class="p-left-padding">
+                        <h3 id="titulo">CONSULTA DE RESERVA</h3>
+                        <form action="" id="formu1">
+                        <label for="codigoReserva">Código da Reserva</label>
+                        <br>
+                        <div class="form-wrapper">
+                            <input type="text" id="codigo-reserva-text" class="rounded-text" placeholder="Digite o código da reserva"/>
+                        </div>
+                        <br>
+                        <input type="submit" value="Consultar Reserva" class="botao-enviar"/>
+                        </form>
                     </div>
-                    <br>
-                    <input type="submit" value="Consultar Reserva" class="botao-enviar"/>
-                    </form>
                 </div>
-            </div>
             </div>
         </div>
         
@@ -51,7 +62,9 @@
             <footer id="rodape">
                 <div class="wrapper">
                     <div id="logo">
-                        <p>Hotel<br>Boa Viagem</p>
+                        <a href="index.html" target="_self">
+                            <img src="assets/img/logo_hbv_vertical_alta_resolucao_WHITE.png" alt="Imagem do logo do Hotel Boa Viagem">
+                        </a>
                     </div>
                     <div id="links-uteis">
                         <ul>

@@ -12,7 +12,7 @@ body {
 /* Estrutura Principal */
 .container {
     width: 100%;
-    height: 100px;
+    height: auto;
 }
 
 .container .wrapper {
@@ -23,7 +23,7 @@ body {
 /* Header */
 #cabecalho {
     width: 100%;
-    height: 100%;
+    height: 100px;
     background: #3C5297;
     color: #fff;
 }
@@ -32,20 +32,32 @@ body {
 #logo {
     width: 25%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.40);
     float: left;
     text-align: center;
     font-size: 24px;
 }
 
+#logo img {
+    max-width: 100%;
+    max-height: 75px;
+    margin-top: 12px;
+    transition: 0.15s;
+}
+
+#logo img:hover {
+    padding-top: 2.5px;
+    max-height: 70px;
+    transition: 0.15s;
+}
+
 /* Menu Principal */
 #menu {
-    width: 70%;
+    width: 50%;
     height: 100%;
     float: right;
     font-size: 18px;
-    line-height: 60px;
-    background: rgba(255, 255, 255, 0.40);
+    line-height: 62.5px;
+    /*background: rgba(255, 255, 255, 0.40);*/
 }
 
 #menu ul {
@@ -59,6 +71,31 @@ body {
 
 #menu li:first-child {
     margin-left: 0px;
+}
+
+#menu li a {
+    color: #fff;
+    padding: 8px 28px 8px 28px;
+    background: transparent;
+    border-radius: 22px;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+#menu li a:hover {
+    color: #fff;
+    padding: 8px 28px 8px 28px;
+    border-radius: 22px;
+    text-decoration: none;
+    background: #8957e5;
+    transition: 0.15s;
+}
+
+#menu .active {
+    color: #fff;
+    padding: 8px 28px 8px 28px;
+    border-radius: 22px;
+    background: #8957e5;
 }
 
 /* Rodapé */
@@ -75,7 +112,18 @@ body {
     width: 25%;
     height: 100%;
     font-size: 40px;
-    background: rgba(255, 255, 255, 0.40);
+}
+
+#rodape #logo img {
+    max-width: 100%;
+    max-height: 215px;
+    margin-top: 22.5px;
+    transition: 0.15s;
+}
+
+#rodape #logo img:hover {
+    max-height: 205px;
+    transition: 0.15s;
 }
 
 #rodape #links-uteis {
@@ -97,7 +145,12 @@ body {
 /* Consultar Reserva  */
 #consulta-reserva {}
 
-#consulta-reserva #img {
+#consulta-reserva #titulo {
+    text-align: center;
+    margin-bottom: 175px;
+}
+
+#img {
     width: 100%;
     height: auto;
     background-image: url(../img/img_codigo-reserva.png);
@@ -107,15 +160,21 @@ body {
     float: left;
 }
 
-#consulta-reserva #titulo {
+#titulo {
     text-align: center;
-    margin-bottom: 175px;
+    margin-bottom: 75px;
 }
 
-#consulta-reserva #form-wrapper {
+.form-wrapper {
     width: 100%; 
     margin-top: 25px; 
     margin-bottom: 75px;
+}
+
+.form-wrapper-2 {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 #p-left {
@@ -127,7 +186,7 @@ body {
     padding: 8%;
 }
 
-#codigo-reserva-text {
+.rounded-text {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 15px;
   border: 1px solid white;
@@ -140,9 +199,18 @@ body {
   text-transform: uppercase;
 }
 
-#codigo-reserva-text::-webkit-input-placeholder {
+.rounded-text::-webkit-input-placeholder {
     color: #fff;
     text-transform: none;
+}
+
+.rounded-select {
+    width: 92.5% !important;
+    height: 40px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    text-align-last: center;
 }
 
 .botao-enviar {
@@ -155,11 +223,13 @@ body {
     color: #fff;
     text-transform: capitalize;
     font-size: 16px;
+    transition: 0.25s;
 }
 
 .botao-enviar:hover {
     cursor: pointer;
     background-color: #6f3ec9;
+    transition: 0.25s;
 }
 
 #formu1 {

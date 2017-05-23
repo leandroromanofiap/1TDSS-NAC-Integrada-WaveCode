@@ -1,15 +1,15 @@
-//Iniciando o evento da página
+//Iniciando o evento da pï¿½gina
 $(document).ready(function () {
     codigo_hospedagem.iniciarForm();
 });
 
-//Objeto de função da página
+//Objeto de funï¿½ï¿½o da pï¿½gina
 codigo_hospedagem = {
     //Iniciar Formulario
     iniciarForm: function () {
         //handler do submit
         codigo_hospedagem.submitForm();
-        //options do calendário
+        //options do calendï¿½rio
         $('#data').datepicker({
             closeText: 'Fechar',
             prevText: '&#x3c;Anterior',
@@ -58,22 +58,32 @@ codigo_hospedagem = {
             "<option>23:00</option>"
             );
     },
-    //Coleção de códigos válidos
+    //Coleï¿½ï¿½o de cï¿½digos vï¿½lidos
     codigoValidacao: {
         '123456': 'Id34uAm'
     },
-    //Função do Submit da página
+    //Funï¿½ï¿½o do Submit da pï¿½gina
     submitForm : function (){
         $('form').submit(function (e) {
             e.preventDefault();
             codigo_hospedagem.validarCodigoReserva($('#codigo-reserva').val());
         });
     },
-    //Função de validação do código
+    //Funï¿½ï¿½o de validaï¿½ï¿½o do cï¿½digo
     validarCodigoReserva : function(codigo){
         if (codigo_hospedagem.codigoValidacao[codigo] != undefined)
-            alert('Hospedagem: ' + codigo_hospedagem.codigoValidacao[codigo]);
+            swal({
+                title: "Hospedagem confirmada!",
+                text: "A sua hospedagem foi confirmada com sucesso. CÃ³digo da hospedagem: " + codigo_hospedagem.codigoValidacao[codigo],
+                type: "success",
+                confirmButtonText: "Fechar"
+            });
         else 
-            alert('Esta hospedagem não existe.')
+            swal({
+                title: "Erro!",
+                text: "Esta hospedagem nÃ£o existe.",
+                type: "error",
+                confirmButtonText: "Fechar"
+            });
     }
 }
