@@ -52,7 +52,7 @@ body {
 
 /* Menu Principal */
 #menu {
-    width: 60%;
+    width: 50%;
     height: 100%;
     float: right;
     font-size: 18px;
@@ -130,7 +130,6 @@ body {
     float: right;
     width: 70%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.40);
 }
 
 #rodape #links-uteis ul {
@@ -206,10 +205,10 @@ body {
 
 .rounded-select {
     width: 92.5% !important;
-    height: 40px;
+    height: 35px;
     -webkit-appearance: none;
     -webkit-border-radius: 15px;
-    border-radius: 15px;
+    border-radius: 17px;
     text-align-last: center;
 }
 
@@ -236,4 +235,104 @@ body {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1240px) {
+  #menu {
+      width: 60%;
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width: 768px) {
+    .container .wrapper {
+        width: 100%;
+    }
+    
+    #menu {
+        width: 100%;
+        background: #4a5d98;
+    }
+
+    #menu li {
+        margin-left: 5px;
+        float: none;
+    }
+
+    #menu li:first-child {
+        margin-left: 6px;
+    }
+
+    #menu li a {
+        width: 100%;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    #p-left {
+        width: 100%;
+    }
+
+    #rodape {
+        display: inline-block;
+        height: auto;
+    }
+
+    #rodape #logo {
+        width: 100%;
+        float: none;
+    }
+
+    #rodape #links-uteis {
+        width: 100%;
+        float: none;
+    }
+
+    #rodape #links-uteis ul {
+        margin-left: 0px;
+        float: none;
+    }
+
+    #rodape #links-uteis ul li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+    .container .wrapper {
+        width: 100%;
+    }
+
+    #logo {
+        width: 30%;
+    }
+
+    #menu {
+        width: 70%;
+        float: right;
+    }
+
+    #menu ul {
+        float: right;
+    }
+
+    #menu li {
+        margin-left: 10px;
+    }
+
+    #p-left {
+        width: 80%;
+    }
+
+    #rodape #logo {
+        margin-left: 5%;
+        width: 20%;
+    }
+
+    #rodape #links-uteis {
+        width: 75%;
+        float: right;
+    }
 }
