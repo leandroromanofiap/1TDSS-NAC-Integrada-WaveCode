@@ -1,0 +1,7 @@
+Olá Prof. Alexandre, tudo bom?
+
+Utilizamos o Git para versionar a sua entrega e todos os arquivos também estão lá.
+
+Se quiser conferir, o link é: https://github.com/leandroromanofiap/nac-integrada-wavecode
+
+Abraços
