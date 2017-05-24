@@ -336,3 +336,47 @@ body {
         float: right;
     }
 }
+
+#form-registrar-consumo{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 100px;
+
+
+}
+
+#p-left2 {
+    background-color: rgba(137, 87, 229, 0.8);
+    width: 50%;
+
+}
+
+ #img2{
+        width: 100%;
+        height: auto;
+        background-image: url(../img/img_exibir-dados.png);
+        background-position: center -174px;
+        background-repeat: no-repeat;
+        color: white;
+        float: left;
+        background-size: cover;
+        background-position: center 0px;
+
+  }
+  .botao-enviar-registrar-consumo {
+      width: 92.5%;
+      margin: 0 auto;
+      background-color: #A30000;
+      border: 0;
+      padding: 15px;
+      border-radius: 22px;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 16px;
+      transition: 0.25s;
+  }
+  .botao-enviar-registrar-consumo:hover {
+      cursor: pointer;
+      background-color: #8B0000;
+      transition: 0.25s;
+  }

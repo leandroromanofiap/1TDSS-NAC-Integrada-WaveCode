@@ -10,13 +10,23 @@
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 
-    <script src="assets/js/registrar-consumo.js" charset="utf-8" type="text/javascript"></script>
+    <script src="assets/js/tipos-servicos.js" charset="utf-8" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body class="body-logo">
     <div class="container">
         <form id="form-tipos-servicos" action="tipos-servicos.html" target="_self" method="get">
-            
+            R$ <span id="valor-total">0.00</span>
+            <br />
+            <br />
+            <table id="tabela-servicos"></table>
+            <br />
+            Código Serviço: <input type="text" id="codigo-servico" />
+            <br />
+            Quantidade de Produtos <input type="text" id="quantidade-produto" />
+            <input type="button" value="Registrar Serviço" id="registrar-servico" />
+            <br />
+            <input type="submit" value="Registrar Serviço" hidden id="Finalizar" />
         </form>
     </div>
 </body>
