@@ -3,6 +3,9 @@
 });
 
 tipos_servicos = {
+    eventos : function(){
+        $('#registrar-servico').click(tipos_servicos.registrar);
+    },
     tabela_servicos : {
         0 : {codigo: 10, tipo: "Cabeleireiro - Corte Masculino", valor: 30, cobrado: "Unidade" },
         1 : {codigo: 11, tipo: "Cabeleireiro - Corte Feminino", valor: 50, cobrado: "Unidade" },
@@ -34,6 +37,7 @@ tipos_servicos = {
         tipos_servicos.submitForm();
         tipos_servicos.iniciar_tabela();
         tipos_servicos.atualizarValorTotal();
+        tipos_servicos.eventos();
     },
     submitForm : function (){
         $('form').submit(function (e) {
@@ -57,12 +61,40 @@ tipos_servicos = {
         $('#tabela-servicos').html(tab);
     },
     atualizarValorTotal: function () {
-        debugger;
         $('#valor-total').html(tipos_servicos.valor_total.toFixed(2));
+    },
+    registrar: function () {
+        codigo = $('#codigo-servico').val();
+        qntd = $('#quantidade-produto').val();
+        debugger;
+        if (codigo.trim() != "" && qntd.trim() != "") {
+            servico = tipos_servicos.localizar_servico(codigo);
+
+            if (servico != undefined && !isNaN(qntd)) {
+                valor_servico = servico["valor"];
+                if (qntd > 0) {
+                    debugger;
+                    tipos_servicos.valor_total += valor_servico * qntd;
+                    tipos_servicos.atualizarValorTotal();
+                    $('#finalizar').show();
+                }
+                else
+                    tipos_servicos.erro();
+            }
+            else
+                tipos_servicos.erro();
+        }
+        else
+            tipos_servicos.erro();
+    },
+    erro: function () {
+        alert('São necessários o código e quantidade de serviços');
+    },
+    localizar_servico: function (codigo) {
+        for (var i = 0; i < 21; i++) {
+            if (tipos_servicos.tabela_servicos[i]["codigo"] == codigo) 
+                return tipos_servicos.tabela_servicos[i];
+        }
+        return undefined;
     }
 }
-
-
-
-
-
