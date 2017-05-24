@@ -15,7 +15,12 @@ registrar_consumo = {
             if (registrar_consumo.validarCodigoReserva($('#codigo-reserva').val()))
                 $(this).unbind('submit').submit();
             else
-                alert('Deu ruim')
+                swal({
+                    title: "Erro!",
+                    text: "O código da reserva não foi encontrado.",
+                    type: "error",
+                    confirmButtonText: "Fechar"
+                });
         });
     },
     validarCodigoReserva: function (codigo) {

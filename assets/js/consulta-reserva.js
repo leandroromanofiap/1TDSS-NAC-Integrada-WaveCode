@@ -12,10 +12,17 @@ registrar_consumo = {
     submitForm : function (){
         $('form').submit(function (e) {
             e.preventDefault();
-            if (registrar_consumo.validarCodigoReserva($('#codigo-reserva').val()))
-                $(this).unbind('submit').submit();
-            else
-                alert('Deu ruim')
+            if (registrar_consumo.validarCodigoReserva($('#codigo-reserva').val())) {
+                window.location = "codigo-hospedagem.html";
+            } else {
+                swal({
+                    title: "Erro!",
+                    text: "O código da reserva não foi encontrado.",
+                    type: "error",
+                    confirmButtonText: "Fechar"
+                });
+            }
+                
         });
     },
     validarCodigoReserva: function (codigo) {
