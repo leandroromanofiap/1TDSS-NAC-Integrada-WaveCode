@@ -210,6 +210,11 @@ body {
     -webkit-border-radius: 15px;
     border-radius: 17px;
     text-align-last: center;
+    color: #fff;
+}
+
+.rounded-select option {
+    color: #000;
 }
 
 .botao-enviar {
