@@ -42,6 +42,10 @@ tipos_servicos = {
     submitForm : function (){
         $('form').submit(function (e) {
             e.preventDefault();
+            if (confirm("Tem certeza que deseja contabilizar a compra de R$" + tipos_servicos.valor_total.toFixed(2))) {
+                alert('Compra efetuada com sucesso para a reserva: 123456')
+                $('form').unbind('submit').submit();
+            }
         });
     },
     validarCodigoReserva: function (codigo) {
