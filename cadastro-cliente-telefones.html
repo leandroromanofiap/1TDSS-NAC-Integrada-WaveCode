@@ -1,24 +1,24 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Hotel Boa Viajem - Código Hospedagem</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Hotel Boa Viagem - Cadastrar Cliente (Pessoa Física)</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="assets/js/lib/bootstrap-datepicker.js"></script>
-        <link rel="stylesheet" type="text/css" href="assets/js/lib/bootstrap-datepicker.css" />
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
         <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 
+        <script src="assets/js/jquery-mask.min.js"></script>
         <script src="assets/js/sweetalert.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/sweetalert.css">
 
-        <script src="assets/js/codigo-hospedagem.js" charset="utf-8" type="text/javascript"></script>
+        <script src="assets/js/cadastro-cliente.js"></script>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
+        <!-- Cabeçalho -->
         <div class="container">
             <header id="cabecalho">
                 <div class="wrapper">
@@ -52,38 +52,52 @@
             <div id="img">
                 <div id="p-left">
                     <div class="p-left-padding">
-                        <h3 id="titulo">CONFIRMAÇÃO DE RESERVA</h3>
-                        <form action="" id="formu1">
-                            <label for="codigo-reserva">Código da Reserva:</label>
-                            <div class="form-wrapper">
-                                <input type="text" id="codigo-reserva" class="rounded-text" value="123456" placeholder="XXXXXXXXXXXXXXXXXX" />
+                        <h3 id="titulo">cadastro de cliente</h3>
+                        <form action="cadastro-cliente-telefones.html" id="formu1">
+
+                            <h3 class="titulo-form">CONTATO</h3>
+
+                            <div class="cadastro-cliente-box">
+                                <label for="codigo-reserva">DDD:</label>
+                                <div class="form-wrapper">
+                                    <input type="text" id="cadastro-cliente-contato-ddd" class="rounded-text" placeholder="Informe o DDD..." />
+                                </div>
                             </div>
 
-                            <br>
+                            <div class="cadastro-cliente-box">
+                                <label for="codigo-reserva">Número do telefone:</label>
+                                <div class="form-wrapper">
+                                    <input type="text" id="cadastro-cliente-contato-numero" class="rounded-text" placeholder="Informe o número do telefone..." />
+                                </div>
+                            </div>
 
-                            <label for="data">Data:</label>
-                            <br>
-                            <div class="form-wrapper-2">
-                                <input type="text" id="data" class="rounded-text" placeholder="XX/XX/XXXX" />
+                            <div class="cadastro-cliente-box">
+                                <label for="codigo-reserva">Tipo do telefone:</label>
+                                <div class="form-wrapper">
+                                    <div class="rounded-text">
+                                        <label for="tipo_comercial">
+                                            <input type="radio" name="tipo_telefone" id="tipo_comercial"> Comercial
+                                        </label>
+
+                                        <label for="tipo_celular">
+                                            <input type="radio" name="tipo_telefone" id="tipo_celular"> Celular
+                                        </label>
+
+                                        <label for="tipo_residencial">
+                                            <input type="radio" name="tipo_telefone" id="tipo_residencial"> Residencial
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <br>
-                            
-                            <label for="hora-atual">Hora:</label>
-                            <br>
-                            <div class="form-wrapper-2">
-                                <select id="hora-atual" class="rounded-text rounded-select"></select>
-                            </div>
-                            
-                            <br>
-                            <input type="submit" id="confirmar-reserva" value="Confirmar Reserva" class="botao-enviar" />
+
+                            <input type="submit" id="cadastro-cliente-concluir" value="Concluir cadastro de cliente" class="botao-enviar" />
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        
 
+        <!-- Rodapé -->
         <div class="container">
             <footer id="rodape">
                 <div class="wrapper">
